@@ -1,0 +1,172 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#map-container {
+    position: relative;
+    height: 95vh;
+    width: 100%;
+}
+
+#visualizar-projetos {
+    max-width: 300px;
+    position: relative;
+    top: 20px;
+    left: 20px;
+}
+
+#map {
+    position: absolute;
+    height: inherit;
+    width: inherit;
+}
+
+a {
+    color: #404040;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #101010;
+}
+
+.heading {
+    background: #fff;
+    border-bottom: 1px solid #eee;
+    background-color: #c93567;
+    color: #fff;
+}
+
+.heading h1 {
+    font-size: 27px;
+}
+
+.listings {
+    height: 100%;
+    overflow: auto;
+    padding-bottom: 60px;
+}
+
+.listings .item {
+    display: block;
+    border-bottom: 1px solid #eee;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.listings .item:last-child {
+    border-bottom: none;
+}
+
+.listings .item .info-item {
+    display: block;
+    color: #df5885;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.listings .item .info-item:hover {
+    cursor: default;
+}
+
+.listings .item .title {
+    display: block;
+    color: #df5885;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.listings .item .title small {
+    font-weight: 400;
+}
+.listings .item.active .title,
+.listings .item .title:hover {
+    color: #ae1649;
+}
+.listings .item.active {
+    background-color: #f8f8f8;
+}
+::-webkit-scrollbar {
+    width: 7px;
+    height: 3px;
+    border-left: 0;
+    background: rgba(0, 0, 0, 0.1);
+}
+::-webkit-scrollbar-track {
+    background: none;
+}
+::-webkit-scrollbar-thumb {
+    background: #c93567;
+    border-radius: 0;
+}
+
+.marker {
+    background-image: url("../img/icons/projeto.png");
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* Marker tweaks */
+.mapboxgl-popup {
+    padding-bottom: 50px;
+}
+
+.mapboxgl-popup-close-button {
+    display: none;
+}
+.mapboxgl-popup-content {
+    font: 400 15px/22px "Source Sans Pro", "Helvetica Neue", sans-serif;
+    padding: 0;
+    width: 250px;
+}
+.mapboxgl-popup-content h3 {
+    background: #c93567;
+    color: #fff;
+    padding: 10px;
+    border-radius: 3px 3px 0 0;
+    font-weight: 700;
+    margin-top: -15px;
+}
+
+.mapboxgl-popup-content ul {
+    list-style: none;
+    padding: 10px;
+    font-weight: 400;
+}
+
+.mapboxgl-popup-content div {
+    padding: 10px;
+}
+
+.mapboxgl-popup-anchor-top > .mapboxgl-popup-content {
+    margin-top: 15px;
+}
+
+.mapboxgl-popup-anchor-top > .mapboxgl-popup-tip {
+    border-bottom-color: #df5885;
+}
+
+.btn-share {
+    background-color: #c93567 !important;
+    color: white !important;
+}
+
+.btn-share:focus,
+.btn_explorar:focus {
+    outline: 0 !important;
+    box-shadow: 0 0 0 0.25rem rgba(223, 88, 133, 0.6) !important;
+}
+
+.btn-share:hover,
+.btn_explorar:focus {
+    color: white !important;
+    background-color: #ae1649 !important;
+}
+
+#confirmacao-icon {
+    font-size: 60px;
+}
